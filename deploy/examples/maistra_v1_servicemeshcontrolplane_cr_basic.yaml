@@ -9,6 +9,9 @@ spec:
   # the defaults baked into the chart values.yaml).
   istio:
     global:
+      mtls: true
+      disablePolicyChecks: false
+      policyCheckFailOpen: false
       proxy:
         # constrain resources for use in smaller environments
         resources:
